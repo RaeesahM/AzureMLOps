@@ -36,6 +36,30 @@ We generate documentation using the Swagger tool.
 ![alt text]()
 
 ### Step 6: Consume the model
+By modifying the scoring_uri and key in the endpoint.py script to match the model enpoint we can interact with the trained model. The output of endpoint.py is shown below.
+![alt text]()
+
+### Step 7: Create, publish and consume a pipeline
+In this step we use a Jupyter Notebook to create, publish and consume a pipeline. 
+
+You can see that the pipeline has been created in the following screenshot:
+![alt text]()
+
+In the pipelines section we also see the Pipeline Endpoint.
+![alt text]()
+
+Clicking on the pipeline we see the bank market dataset with the AutoML model as was created in the notebook.
+![alt text]()
+
+The published pipeline overview shows the REST endpoint and that the status of the endpoint is ACTIVE
+![alt text]()
+
+In the Jupyter notebook we see that the "Use RunDetails Widget" shows the step runs"
+![alt text]()
+
+We can also see the run in ML Studio
+![alt text]()
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
