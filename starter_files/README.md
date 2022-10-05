@@ -20,45 +20,45 @@ In this step we create a service principal and allow it access to the workspace.
 
 ### Step 2: Create AutoML Run
 We create an AutoML experiment using the Bank marketing dataset. The dataset can be seen in the following screenshot.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/DatasetAvailable.png)
 The experiment creates a classification model. The completed experiment can be seen below.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ExperimentCompleted.png)
 We will be using the best model for deployment.The best model in this case was a voting ensemble.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/AutoMLBestModel.png)
 
 ### Step 3: Deploying the model
 We deploy the best model to an endpoint. We enable logging by enabling Application Insights.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ApplicationInsightsEnabled.png)
 The logs produced from logs.py can be seen below:
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/logs.pyOutput.png)
 
 We generate documentation using the Swagger tool.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/SwaggerRunning.png)
 
 ### Step 6: Consume the model
 By modifying the scoring_uri and key in the endpoint.py script to match the model enpoint we can interact with the trained model. The output of endpoint.py is shown below.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/EndpointRuns.png)
 
 ### Step 7: Create, publish and consume a pipeline
 In this step we use a Jupyter Notebook to create, publish and consume a pipeline. 
 
 You can see that the pipeline has been created in the following screenshot:
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PipelinesCreated.png)
 
 In the pipelines section we also see the Pipeline Endpoint.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PublishedPipelineEndpoint.png)
 
 Clicking on the pipeline we see the bank market dataset with the AutoML model as was created in the notebook.
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/BankmarketingWithAutoML.png)
 
 The published pipeline overview shows the REST endpoint and that the status of the endpoint is ACTIVE
 ![alt text]()
 
 In the Jupyter notebook we see that the "Use RunDetails Widget" shows the step runs"
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ShowsStepRuns.png)
 
 We can also see the run in ML Studio
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ScheduledJob.png)
 
 
 ## Screen Recording
