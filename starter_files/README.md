@@ -15,7 +15,7 @@ Use manual feature selection to improve the model performance.
 ## Key Steps
 ### Step 1: Authentication 
 In this step we create a service principal and allow it access to the workspace. This enables authentication with automation so that the system does not stop to wait for the user to input a password. In the screenshots below you can see that a service principal has been created and that the az ml workspace share command excutes successfully with no errors
-![alt text](http://url/to/img.png](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ServicePrincipleCreateed.png)
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ServicePrincipleCreateed.png)
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/AuthenticationProof.png)
 
 ### Step 2: Create AutoML Run
@@ -52,7 +52,7 @@ Clicking on the pipeline we see the bank market dataset with the AutoML model as
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/BankmarketingWithAutoML.png)
 
 The published pipeline overview shows the REST endpoint and that the status of the endpoint is ACTIVE
-![alt text]()
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PublishedPipelineOverview.png)
 
 In the Jupyter notebook we see that the "Use RunDetails Widget" shows the step runs"
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ShowsStepRuns.png)
@@ -62,7 +62,7 @@ We can also see the run in ML Studio
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+The screencast for the project can be found at the following link:
+https://youtu.be/pOrwqQ4LhOI
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
