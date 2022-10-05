@@ -18,6 +18,25 @@ In this step we create a service principal and allow it access to the workspace.
 ![alt text](http://url/to/img.png](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ServicePrincipleCreateed.png)
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/AuthenticationProof.png)
 
+### Step 2: Create AutoML Run
+We create an AutoML experiment using the Bank marketing dataset. The dataset can be seen in the following screenshot.
+![alt text]()
+The experiment creates a classification model. The completed experiment can be seen below.
+![alt text]()
+We will be using the best model for deployment.The best model in this case was a voting ensemble.
+![alt text]()
+
+### Step 3: Deploying the model
+We deploy the best model to an endpoint. We enable logging by enabling Application Insights.
+![alt text]()
+The logs produced from logs.py can be seen below:
+![alt text]()
+
+We generate documentation using the Swagger tool.
+![alt text]()
+
+### Step 6: Consume the model
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
