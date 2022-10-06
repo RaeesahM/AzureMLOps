@@ -2,7 +2,7 @@
 
 In this project we use the Bankmarketing dataset and Azure to configure a cloud based machine learning production model, deploy it and consume it. The AutoML module in  machine learning studio is used to predict whether a customer will subscribe to a fixed term deposit, hence it is a classification task. The best model is then selected and deployed using an Azure Container Instance with authentication and logging enabled. We use a REST endpoint to consume the model. Users initiate an input request using an HTTP POST requests. 
 
-We also use a Jupyter Notebook and the Python SDK to create, publish and consume a pipeline. In the notebook, we create an experiment in the existing workspace and attach existing AmlCompute to a workspace. The data is loaded using a TablularDataset and AutoML is configured and trained. We test the best model and publish the pipeline to a REST endpoint.
+We also use a Jupyter Notebook and the Python SDK to create, publish and consume a pipeline. Pipelines are a way to automate worflows allowing external services to interact with the pipeline so that they can do work more efficiently. In the notebook, we create an experiment in the existing workspace and attach existing AmlCompute to a workspace. The data is loaded using a TablularDataset and AutoML is configured and trained. We test the best model and publish the pipeline to a REST endpoint.
 
 ## Architectural Diagram
 The main steps of the project can be seen in the image below.
