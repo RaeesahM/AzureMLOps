@@ -1,6 +1,8 @@
 # Operationalising Machine Learning Project
 
-In this project we use the Bankmarketing dataset and Azure to configure a cloud based machine learning production model, deploy it and consume it. We also use a Jupyter Notebook and the Python SDK to create, publish and consume a pipeline. 
+In this project we use the Bankmarketing dataset and Azure to configure a cloud based machine learning production model, deploy it and consume it. The AutoML module in  machine learning studio is used to predict whether a customer will subscribe to a fixed term deposit, hence it is a classification task. The best model is then selected and deployed using an Azure Container Instance with authentication and logging enabled. We use a REST endpoint to consume the model. Users initiate an input request using an HTTP POST requests. 
+
+We also use a Jupyter Notebook and the Python SDK to create, publish and consume a pipeline. In the notebook, we create an experiment in the existing workspace and attach existing AmlCompute to a workspace. The data is loaded using a TablularDataset and AutoML is configured and trained. We test the best model and publish the pipeline to a REST endpoint.
 
 ## Architectural Diagram
 The main steps of the project can be seen in the image below.
@@ -48,7 +50,7 @@ You can see that the pipeline has been created in the following screenshot:
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PipelinesCreated.png)
 
 In the pipelines section we also see the Pipeline Endpoint.
-![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PublishedPipelineEndpoint.png)
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/PipelineEndpointActive.png)
 
 Clicking on the pipeline we see the bank market dataset with the AutoML model as was created in the notebook.
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/BankmarketingWithAutoML.png)
@@ -60,7 +62,7 @@ In the Jupyter notebook we see that the "Use RunDetails Widget" shows the step r
 ![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ShowsStepRuns.png)
 
 We can also see the run in ML Studio
-![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ScheduledJob.png)
+![alt text](https://github.com/RaeesahM/AzureMLOps/blob/master/starter_files/ScheduledJob2.png)
 
 
 ## Screen Recording
